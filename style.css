@@ -1,0 +1,286 @@
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            /* height: 100vh; */
+            width: 100vw;
+            background-color: rgb(233, 232, 230);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .container{
+            width: 70%;
+        }
+        .section1{
+            width: 100%;
+            height: 12rem;
+            background-image:linear-gradient(to right,#ff0084, #33001b );
+            display: flex;
+        }
+        .profile-img{
+            /* background-color: chartreuse; */
+            width: 30%;
+            height: 100%;
+            /* border-radius: 50%; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .profile-img img {
+            width: 110px;
+            height: 110px;
+            border-radius:50%;
+        }
+        .profile-data{
+            /* background-color: darkorange; */
+            /* height: 100%; */
+            color: white;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .details{
+          width: 30%;
+          /* background-color: #03A9F4; */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        .section2{
+            /* background-color: aqua; */
+            /* border: 2px solid rgb(2, 175, 118); */
+            height: 12%;
+            width: 100%;
+            /* padding: 20px; */
+        }
+        .section-title{
+            /* background-color: aqua; */
+            margin-top: 20px;
+            width: 20%;
+            height: 40px;
+            color: #33001b;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+
+        }
+        .section-content{
+            /* margin-left: 40px; */
+            padding: 5px;
+        }
+        .section3{
+            width: 100%;
+            height: 25%;
+            /* background-color: brown; */
+        }
+        table{
+            border: 1px solid black;
+            padding: 3px;
+            margin: 0px;
+        }
+        th, td{
+            border: 1px solid gray;
+            text-align: center;
+            padding: 10px;
+          }
+          table, th, td{
+            
+            border-collapse: collapse;
+            padding: 20px;
+        }
+        .table-section table{
+            width: 100%;
+            height: 40%;
+            border: 3px solid #33001b;
+        }
+        .table-row {
+          background-image: linear-gradient(to right,#ff0084, #33001b );
+          color: white;
+        }
+        .table-section h2{
+            margin-bottom: 15px;
+        }
+        .section4{
+            margin-top: 25px;
+            height: 20%;
+            /* margin-bottom: 25px; */
+        }
+        .section4 h2{
+          margin-bottom: 15px;
+        }
+        .section5{
+            margin-top: 25px;
+        }
+        .skills{
+            margin-left: 20px;
+            list-style: none;
+        }
+        .section6{
+            margin-top: 20px;
+            margin-bottom: 50px;
+            padding: 10px;
+            height: 10px;
+            display: flex;
+            justify-content: center;
+            background-image:linear-gradient(to right,#ff0084, #33001b );
+        }
+        .project-content div{
+          padding-bottom: 20px;
+        }
+        .dark-color{
+          color: #33001b;
+        }
+        .light-color{
+          color: #ff0084;
+        }
+        /* From Uiverse.io by Praashoo7 */ 
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 60px;
+  height: 60px;
+  outline: none;
+  border: none;
+  
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.instagram {
+  margin-top: 1em;
+  margin-left: 0.8em;
+  font-size: 20px;
+  fill: #cc39a4;
+}
+.instagram:hover{
+    color: white;
+}
+
+.card2 {
+  width: 60px;
+  height: 60px;
+  outline: none;
+  border: none;
+  
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.twitter {
+  margin-top: 1em;
+  margin-left: -.9em;
+  font-size: 20px;
+  fill: #03A9F4;
+}
+
+.card3 {
+  width: 60px;
+  height: 60px;
+  outline: none;
+  border: none;
+  
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.github {
+  margin-top: -.6em;
+  margin-left: 1.2em;
+}
+
+.card4 {
+  width: 60px;
+  height: 60px;
+  outline: none;
+  border: none;
+  
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.discord {
+  margin-top: -.9em;
+  margin-left: -.8em;
+  font-size: 20px;
+  fill: #8c9eff;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+    color: white;
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #024463;
+}
+
+.card2:hover .twitter {
+  fill: white;
+  color: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #01b613;
+}
+
+.card4:hover .discord {
+  fill: white;
+  color: white;
+}
+
+.skills li{
+    font-weight: 600;
+    padding: 6px;
+}
+
+        
+    
