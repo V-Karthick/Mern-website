@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+    <style>
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: repeat(3, auto);
+            gap: 2px;
+        }
+        .red{
+            background-color: red;
+            /* flex: 1; */
+            /* z-index: 1; */
+            position: relative;
+            animation: box1 5s infinite;
+        }
+        .green{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: lawngreen;
+            z-index: 1;
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .purple{
+            background-color: purple;
+            /* z-index: 1; */
+            position: relative;
+            grid-row: 3/4;
+            grid-column: 3/4;
+            animation: box2 5s infinite;
+        }
+        .emoji{
+            /* font-size: 50px; */
+            animation: emoji 5s infinite;
+        }
+        @keyframes box1{
+            0% {top: 0%; left: 0%;}
+            50%{top: 200%; left: 200%;}
+            100%{top: 0%; left: 0%;}
+        }
+        @keyframes box2{
+            0% {bottom: 0%; right: 0%;}
+            50%{bottom: 200%; right: 200%;}
+            100%{bottom: 0%; right: 0%;}
+        }
+
+        @keyframes emoji{
+            0% {scale: 0;}
+            50%{scale: 4;}
+            100%{ scale: 0;}
+        }
+        @media only screen and (max-width: 600px)
+        {
+            .container{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                margin: 10px;
+            }
+            .red{
+                flex:1;
+            }
+            .green{
+                flex:1;
+            }
+            .purple{
+                flex:1;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red">
+
+        </div>
+        <div class="green">
+                <i class="fa-regular fa-face-grin-squint-tears emoji"></i>
+        </div>
+        <div class="purple">
+
+        </div>
+    </div>
+</body>
+</html>
