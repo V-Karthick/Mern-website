@@ -21,7 +21,7 @@
         }
         .form-container{
             background-color: rgb(205, 237, 205);
-            height: 30vh;
+            height: 40vh;
             width: 25vw;
             border: 2px solid black;
             padding: 30px;
@@ -39,6 +39,7 @@
             margin-bottom: 20px;
             border-radius:5px ;
             padding: 5px;
+            color: black;
         }
         .form-container:hover{
             transform: scale(1.1);
@@ -58,11 +59,13 @@
         <form class="form-container" onsubmit="register(event)">
             <h3>Form</h3>
             <!-- <label for="user-name">Name</label> -->
-            <input type="text" id="user-name" placeholder="Enter your name">
+            <input type="text" id="user-name" placeholder="Name">
             <!-- <label for="user-email">Email</label> -->
-            <input type="email" id="user-email" placeholder="Enter your email">
+            <input type="email" id="user-email" placeholder="Email">
+            <input type="password" id="user-password" placeholder="Password">
             <!-- <label for="user-number">Phone number</label> -->
-            <input type="tel" id="user-number" placeholder="Enter your phone number">
+            <input type="text" id="user-number" placeholder="Number">
+            <input type="number" id="user-age" placeholder="Age">
             <button type="submit" class="reg-button">Register</button>
         </form>
     </div>
@@ -70,8 +73,35 @@
 <script>
     function register(event){
         event.preventDefault()
-        let name=document.getElementById("user-name")
-        console.log(name.value)
+        let name=document.getElementById("user-name").value
+        let email = document.getElementById("user-email").value
+        let password= document.getElementById("user-password").value
+        let phno = document.getElementById("user-number").value
+        let age = document.getElementById("user-age").value
+        if(name==="" && email==="" && password.length<8 && phno==0)
+        {
+            console.log("enter every field")
+        }
+        else
+        {
+            console.log("successful")
+        }
+        if(age>=18)
+        {
+            console.log("major")
+        }
+        else
+        {
+            console.log("minor")
+        }
+        const data={
+            username:name,
+            useremail:email,
+            userpassword:password,
+            userphno:phno,
+            userage:age>=18 ? "major" : "minor",
+        }
+        console.log(data)
     }
 </script>
 
